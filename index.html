@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Enrique Velasco Jimenez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/queries.css">
+
+    <!-- Box icons-->
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+    <!-- Animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Login Validation</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="formulario">
+            <div class="img-formulario animate__animated animate__fadeInLeft">
+                <img src="./assets/img/img.svg" alt="img-formulario">
+            </div>
+            <div class="info-formulario animate__animated animate__fadeInDown">
+                <h1 class="titulo-formulario">Empieza con nosotros!!</h1>
+                <form id="formulario">
+                    <div class="campo">
+                        <label for="name">Nombre completo</label>
+                        <input class="validar" type="text" id="name">
+                        <div class="campo-errores">
+                            <p class="mensaje-error">El nombre debe tener ambos apellidos</p>
+                            <div class="icons">
+                                <div class="icon icon-good">
+                                    <box-icon name='check-circle' type='solid' color='#74d21f'></box-icon class="icon">
+                                </div>
+                                <div class="icon icon-bad">
+                                    <box-icon name='x-circle' type='solid' color='#f00923' ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="userName">Elige un nombre de usuario</label>
+                        <input class="validar" type="text" id="userName">
+                        <div class="campo-errores">
+                            <p class="mensaje-error">Nombre de usuario válido</p>
+                            <div class="icons">
+                                <div class="icon icon-good">
+                                    <box-icon name='check-circle' type='solid' color='#74d21f'></box-icon class="icon">
+                                </div>
+                                <div class="icon icon-bad">
+                                    <box-icon name='x-circle' type='solid' color='#f00923' ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input class="validar" type="text" id="email">
+                        <div class="campo-errores">
+                            <p class="mensaje-error">Email no válido</p>
+                            <div class="icons">
+                                <div class="icon icon-good">
+                                    <box-icon name='check-circle' type='solid' color='#74d21f'></box-icon class="icon">
+                                </div>
+                                <div class="icon icon-bad">
+                                    <box-icon name='x-circle' type='solid' color='#f00923' ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="password">Contraseña</label>
+                        <input class="validar" type="text" id="password">
+                        <div class="campo-errores">
+                            <p class="mensaje-error">8 caracteres, 1 May, 1 Min y 1 Dígito</p>
+                            <div class="icons">
+                                <div class="icon icon-good">
+                                    <box-icon name='check-circle' type='solid' color='#74d21f'></box-icon class="icon">
+                                </div>
+                                <div class="icon icon-bad">
+                                    <box-icon name='x-circle' type='solid' color='#f00923' ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="confirmPassword">Confirmar contraseña</label>
+                        <input class="validar" type="text" id="confirmPassword">
+                        <div class="campo-errores">
+                            <p class="mensaje-error">Las contraseñas no coinciden</p>
+                            <div class="icons">
+                                <div class="icon icon-good">
+                                    <box-icon name='check-circle' type='solid' color='#74d21f'></box-icon class="icon">
+                                </div>
+                                <div class="icon icon-bad">
+                                    <box-icon name='x-circle' type='solid' color='#f00923' ></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="campo">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
+                    
+                </form>
+            </div>
+            </div>
+    </div>
+    
+    <script src="./JS/validacion.js"></script>
+</body>
+</html>
